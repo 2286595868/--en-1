@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="JM" >
+    <title>易联无双</title>
+    <style>
+        @keyframes hidePreloader {
+            0% {
+                width: 100%;
+                height: 100%;
+            }
+
+            100% {
+                width: 0;
+                height: 0;
+            }
+        }
+
+        body>div.preloader {
+            position: fixed;
+            background: white;
+            width: 100%;
+            height: 100%;
+            z-index: 1071;
+            opacity: 0;
+            transition: opacity .5s ease;
+            overflow: hidden;
+            pointer-events: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body:not(.loaded)>div.preloader {
+            opacity: 1;
+        }
+
+        body:not(.loaded) {
+            overflow: hidden;
+        }
+
+        body.loaded>div.preloader {
+            animation: hidePreloader .5s linear .5s forwards;
+        }
+        #navbar-logo {
+            width: 130px;
+            height: auto;
+        }
+    </style>
+    <script>
+        window.addEventListener("load", function() {
+            setTimeout(function() {
+                document.querySelector('body').classList.add('loaded');
+            }, 300);
+        });
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" href="../src/assets/img/brand/logo.png" type="image/png"><!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/libs/@fortawesome/fontawesome-free/css/all.min.css">
+    <!-- Quick CSS -->
+    <link rel="stylesheet" href="assets/css/quick-website.css" id="stylesheet">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container">
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">
+            <img alt="Image placeholder" src="assets/img/brand/logo.png" id="navbar-logo" >
+        </a>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="./index.html">首页 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./moreabout.html">详细信息</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./aboutus.html">关于我们</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">联系我们</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./e-contact.html">EN/中</a>
+                </li>
+                <div class="dropdown-divider"></div>
+            </ul>
+        </div>
+
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mt-4 mt-lg-0 ml-auto">
+                <li class="nav-item dropdown dropdown-animate" data-toggle="hover">
+                    <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">更多</a>
+                    <div class="dropdown-menu dropdown-menu-single">
+                        <a href="index.html" class="dropdown-item">首页</a>
+                        <a href="./aboutus.html" class="dropdown-item">关于我们</a>
+                        <a href="./moreabout.html" class="dropdown-item">详细信息</a>
+                        <a href="./contact.html" class="dropdown-item">联系我们</a>
+                        <a href="./e-contact.html" class="dropdown-item">EN/中</a>
+                        <div class="dropdown-divider"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!--main-->
+<!--first-->
+<section class="spotlight parallax bg-cover bg-size--cover" data-spotlight="fullscreen" style="background-color: white;">
+    <span class="mask alpha-7" style="background-color: white;"></span>
+    <div class="spotlight-holder py-lg pt-lg-xl">
+        <div class="container d-flex align-items-center no-padding">
+            <div class="col">
+                <div class="row row-cols-md-2-space align-items-center text-center text-md-left justify-content-center">
+                    <div class="col-12">
+                        <div class="text-center mt-lg-6">
+                            <img src="./assets/img/aboutus/公司.jpg" style="width: 200%; border-radius: 10px;" class="img-fluid animated" data-animation-in="jackInTheBox" data-animation-delay="1000">
+                            <h2 class="heading display-4 font-weight-400 text-dark mt-5 animated" data-animation-in="fadeInUp" data-animation-delay="2000">
+                                <span class="font-weight-700">深圳市易联无双技术有限公司</span>
+                            </h2>
+                            <p class="lead text-dark mt-3 lh-180 c-dark animated" data-animation-in="fadeInUp" data-animation-delay="2500">
+                                简称“易联无双”，前
+                                身为成立于2001年的深圳市易德来电子有限公司,于2013年启
+
+                                动新公司名进行运营,致力成为领先的全球一站式中小批量电
+
+                                子制造平台。易联无双位于深圳的总部设有研发中心及制造中
+
+                                心,面向全球客户提供从概念到成品的一站式电子制造服务,
+
+                                包括产品设计开发、ODM/OEM服务、PCB设计、PCB制板、
+
+                                PCBA焊接、组装、测试等。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--second-->
+<section class="spotlight parallax bg-cover bg-size--cover" data-spotlight="fullscreen" style="background-color: white;">
+    <span class="mask alpha-7" style="background-color: white;"></span>
+    <div class="spotlight-holder py-lg pt-lg-xl">
+        <div class="container d-flex align-items-center no-padding">
+            <div class="col">
+                <div class="container">
+                    <h5 class="heading font-weight-400 mt-5 animated" data-animation-in="fadeInUp" data-animation-delay="2000" style="color: #0d8ddc; font-size: 2rem;">
+                        <span class="font-weight-400">工厂视图</span>
+                    </h5>
+
+                    <div class="row">
+                        <!-- 第一行 -->
+                        <div class="col-md-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./assets/img/aboutus/工厂smt.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">SMT assembly line</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./assets/img/aboutus/工厂smt2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">SMT assembly line</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./assets/img/aboutus/工厂wave2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Wave-soldering</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!-- 第二行 -->
+                        <div class="col-md-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./assets/img/aboutus/工厂AOI.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">AOI</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./assets/img/aboutus/工厂juki.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">JUKI 2050</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./assets/img/aboutus/工厂juki2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">JUKI 1080</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!-- 第三行 -->
+                        <div class="col-md-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./assets/img/aboutus/工厂x-ray.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">X-RAY</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./assets/img/aboutus/工厂fully.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Fully Automatic Press</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./assets/img/aboutus/工厂fai.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">FAI</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!-- 第四行 -->
+                        <div class="col-md-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./assets/img/aboutus/工厂EMW.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Electronic Material Warehouse</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./assets/img/aboutus/工厂DIP.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">DIP workshop</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./assets/img/aboutus/工厂FS.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Finished Store</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--third-->
+<section class="slice slice-lg pt-lg-6 pb-0 pb-lg-6 bg-section-secondary">
+    <div class="container">
+        <!-- Title -->
+        <!-- Section title -->
+        <div class="row mb-5 justify-content-center text-center">
+            <div class="col-lg-6">
+                <h2 class=" mt-4">质量体系</h2>
+            </div>
+        </div>
+        <!-- Card -->
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body pb-5">
+                        <div class="pt-4 pb-5">
+                            <img src="assets/img/aboutus/证书1.png" class="img-fluid img-center" style="height: 150px;" alt="Illustration" />
+                        </div>
+                        <h5 class="h4 lh-130 mb-3">IATF 16949
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body pb-5">
+                        <div class="pt-4 pb-5">
+                            <img src="assets/img/aboutus/证书2.png" class="img-fluid img-center" style="height: 150px;" alt="Illustration" />
+                        </div>
+                        <h5 class="h4 lh-130 mb-3">ISO 9001</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body pb-5">
+                        <div class="pt-4 pb-5">
+                            <img src="assets/img/aboutus/证书3.png" class="img-fluid img-center" style="height: 150px;" alt="Illustration" />
+                        </div>
+                        <h5 class="h4 lh-130 mb-3">ISO 13485</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  
+
+
+
+
+
+
+
+<!--footer-->
+    <div class="container mt-5">
+        <footer class="bg-white border-top p-3 text-muted small">
+            <div class="row align-items-center justify-content-between">
+                <div>
+                    <span class="navbar-brand mr-2"><strong></strong></span> Shenzhen E-Lannet Technology Co., Ltd ;
+                    <script>document.write(new Date().getFullYear())</script>
+                    .E-Lannet Technology.
+                </div>
+                <div>
+                    Made with <a target="_blank" class="text-secondary font-weight-bold" href="">Shenzhen E-Lannet Technology Co</a> by LJM.
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/svg-injector/dist/svg-injector.min.js"></script>
+    <script src="assets/libs/feather-icons/dist/feather.min.js"></script>
+    <!-- Quick JS -->
+    <script src="assets/js/quick-website.js"></script>
+    <!-- Feather Icons -->
+    <script>
+        feather.replace({
+            'width': '1em',
+            'height': '1em'
+        })
+    </script>
+    </body>
+
+</html>

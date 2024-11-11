@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="JM" >
+    <title>易联无双</title>
+    <!-- Preloader -->
+    <style>
+        @keyframes hidePreloader {
+            0% {
+                width: 100%;
+                height: 100%;
+            }
+
+            100% {
+                width: 0;
+                height: 0;
+            }
+        }
+
+        body>div.preloader {
+            position: fixed;
+            background: white;
+            width: 100%;
+            height: 100%;
+            z-index: 1071;
+            opacity: 0;
+            transition: opacity .5s ease;
+            overflow: hidden;
+            pointer-events: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body:not(.loaded)>div.preloader {
+            opacity: 1;
+        }
+
+        body:not(.loaded) {
+            overflow: hidden;
+        }
+
+        body.loaded>div.preloader {
+            animation: hidePreloader .5s linear .5s forwards;
+        }
+    </style>
+    <script>
+        window.addEventListener("load", function() {
+            setTimeout(function() {
+                document.querySelector('body').classList.add('loaded');
+            }, 300);
+        });
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" href="../src/assets/img/brand/logo.png" type="image/png">
+    <link rel="stylesheet" href="assets/libs/@fortawesome/fontawesome-free/css/all.min.css">
+    <!-- Quick CSS -->
+    <link rel="stylesheet" href="assets/css/quick-website.css" id="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container">
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">
+            <img alt="Image placeholder" src="assets/img/brand/logo.png" id="navbar-logo" >
+        </a>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="./e-index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./e-moreabout.html">Details</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./e-aboutus.html">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./e-contact.html">Contact us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./moreabout.html">EN/中</a>
+                </li>
+                <div class="dropdown-divider"></div>
+            </ul>
+        </div>
+
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mt-4 mt-lg-0 ml-auto">
+                <li class="nav-item dropdown dropdown-animate" data-toggle="hover">
+                    <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">more</a>
+                    <div class="dropdown-menu dropdown-menu-single">
+                        <a href="./e-index.html" class="dropdown-item">Home</a>
+                        <a href="./e-aboutus.html" class="dropdown-item">About us</a>
+                        <a href="./e-moreabout.html" class="dropdown-item">Details</a>
+                        <a href="./e-contact.html" class="dropdown-item">Contact us</a>
+                        <a href="./moreabout.html" class="dropdown-item">EN/中</a>
+                        <div class="dropdown-divider"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<main role="main" class="container">
+    <div class="row">
+        <div class="col-md-8 blog-main">
+            <h3 class="pb-4 mb-4 font-italic border-bottom">
+                PCB Design: Business Overview
+            </h3>
+
+            <div class="blog-post">
+                <blockquote>
+                    <ul>
+                        <li>More than 10 years of professional design experience, process improvement, and technical support services. Support mainstream design tools: Allegro, Pads, Mentor Expedition</li>
+                        <li>Design types: high speed, simulation, soft-hard hybrid, high density, high voltage, high efficiency, RF, backplane, ATE, flexible circuit, soft-hard combination board, aluminum circuit board, etc.</li>
+                        <li>Meet customers' expertise in design, schedule, cost, materials, manufacturing processes and their limitations, reliability, safety, etc.</li>
+                        <li>Focusing on high-speed design, we conduct in-depth research and technology accumulation on high-speed boards and processes.</li>
+                        <li>The well-thought-out DFX simulation system also takes into account production issues in the early stages of the design.</li>
+                    </ul>
+                </blockquote>
+
+                <h2 style="color: #0c85d0;">PCB Design: Capabilities</h2>
+
+                <img src="./assets/img/moreabout/pcb.png" class="img-thumbnail" alt="...">
+                <h3>SI Simulation Analysis</h3>
+                <p>We have a complete SI design and solution process for SI problems. Based on design and signal integrity timing requirements, pre-cabling simulation allows designers to select components, adjust part layouts, plan system clock networks, and determine termination strategies and topologies for critical networks. and determine the termination strategy and topology of critical networks. Post-routing simulation can evaluate whether routing parameters such as reflection, ringing, overshoot, crosstalk, and timing meet design requirements, helping to reveal potential SI issues and improve design reliability.</p>
+
+                <h3>PI Simulation Analysis</h3>
+                <p>If the design of the power grid is flawed, it will directly affect the stability of the entire system. We have accumulated a lot of experience in the field of high-current grid design. Combined with existing simulation methods in early design, we can detect early risks and optimize the layout of devices and power modules, no. The pads and capacitance distribution ensure the reliability of the power supply network design.</p>
+                <h3>DFM</h3>
+                <p>The boards, components and their construction will make the best choice in terms of cost, efficiency and quality, as the production-related process issues are taken into account when the product is used holistically from the beginning of product planning. In particular, the layout of the board needs to conform to this selection. In the design process, various simulation software and special inspection regulations are used for the inspection and modification of the board surface in each link to ensure the yield of the product from design to production, which greatly improves the manufacturability of the product design, so as to achieve the effect of saving time, materials and costs.</p>
+            </div>
+
+            <!--            <div class="blog-post">-->
+            <!--                <h2 class="blog-post-title">Another blog post</h2>-->
+            <!--                <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>-->
+
+            <!--                <p>I am ready for the road less traveled. Already <a href="#">brushing off the dust</a>. Yeah, you're lucky if you're on her plane. I used to bite my tongue and hold my breath. Uh, She’s a beast. I call her Karma (come back). Black ray-bans, you know she's with the band. I can't sleep let's run away and don't ever look back, don't ever look back.</p>-->
+            <!--                <blockquote>-->
+            <!--                    <p>Growing fast into a <strong>bolt of lightning</strong>. Be careful Try not to lead her on</p>-->
+            <!--                </blockquote>-->
+            <!--                <p>I'm intrigued, for a peek, heard it's fascinating. Oh oh! Wanna be a victim ready for abduction. She's got that international smile, oh yeah, she's got that one international smile. Do you ever feel, feel so paper thin. I’m gon’ put her in a coma. Sun-kissed skin so hot we'll melt your popsicle.</p>-->
+            <!--                <p>This is transcendental, on another level, boy, you're my lucky star.</p>-->
+            <!--            </div>&lt;!&ndash; /.blog-post &ndash;&gt;-->
+
+            <!--            <div class="blog-post">-->
+            <!--                <h2 class="blog-post-title">New feature</h2>-->
+            <!--                <p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>-->
+
+            <!--                <p>From Tokyo to Mexico, to Rio. Yeah, you take me to utopia. I'm walking on air. We'd make out in your Mustang to Radiohead. I mean the ones, I mean like she's the one. Sun-kissed skin so hot we'll melt your popsicle. Slow cooking pancakes for my boy, still up, still fresh as a Daisy.</p>-->
+            <!--                <ul>-->
+            <!--                    <li>I hope you got a healthy appetite.</li>-->
+            <!--                    <li>You're never gonna be unsatisfied.</li>-->
+            <!--                    <li>Got a motel and built a fort out of sheets.</li>-->
+            <!--                </ul>-->
+            <!--                <p>Don't need apologies. Boy, you're an alien your touch so foreign, it's <em>supernatural</em>, extraterrestrial. Talk about our future like we had a clue. I can feel a phoenix inside of me.</p>-->
+            <!--            </div>&lt;!&ndash; /.blog-post &ndash;&gt;-->
+
+            <!--            <nav class="blog-pagination">-->
+            <!--                <a class="btn btn-outline-primary" href="#">Older</a>-->
+            <!--                <a class="btn btn-outline-secondary disabled">Newer</a>-->
+            <!--            </nav>-->
+
+        </div>
+    </div>
+
+</main>
+
+
+<main role="main" class="container">
+    <div class="row">
+        <div class="col-md-8 blog-main">
+            <h3 class="pb-4 mb-4 font-italic border-bottom">
+            </h3>
+            <div class="blog-post">
+                <h2 style="color: #0c85d0;">Material procurement</h2>
+                <img src="./assets/img/moreabout/材料采购.png" class="img-thumbnail" alt="...">
+                <h3>We hava a group of high-quality suppliers</h3>
+                <p>We purchase more than 4000 items per year with an average of about 100 materials per project. We cooperate with regular agents and accumulate a number of high-quality suppliers.</p>
+
+                <h3>Have very good practical experience in component procurement</h3>
+                <p>The purchasing staff has undergone rigorous training and has very good practical experience in component procurement, and can obtain professional channels and quickly complete the procurement of medium/small quantities of components</p>
+                <h3>Provide the best quality and fastest service.</h3>
+                <p>By accessing the private network of the Internet, the purchasing department can obtain the latest international market information in a timely manner, solve problems quickly and accurately, and provide customers with the best quality and fastest service.</p>
+                <h3>A complete component procurement process</h3>
+                <p>The R&D department has established a complete component procurement process, on the basis of which we provide services and updates in real time. In addition, the procedure operation effectively guarantees that customers get cost-effective materials and also ensures timely delivery. Common components are: capacitors, resistors, inductors, connectors, diodes, resistors, relays, potentiometers, sensors, etc.</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<main role="main" class="container">
+    <div class="row">
+        <div class="col-md-8 blog-main">
+            <h3 class="pb-4 mb-4 font-italic border-bottom"></h3>
+
+            <div class="blog-post">
+                <h2 style="color: #0c85d0;">Process capabilities</h2>
+                <img src="./assets/img/moreabout/制作工艺.png" class="img-thumbnail" alt="...">
+                <p>The company has six fully automatic Panasonic SMT production lines, which can mount products with the smallest components (chips01005, QFP BGA pitch 0.3Pich) for customers. In addition, to ensure the reliability of the SMT placement system, the company has introduced 10-zone reflow soldering, X-RAY inspection machine, AOI inspection machine, stencil ultrasonic cleaning machine, etc</p>
+                <img src="./assets/img/moreabout/工厂.png" class="img-thumbnail" alt="...">
+
+                <h3>DIP Flow</h3>
+                <img src="./assets/img/moreabout/dip.png" class="img-thumbnail" alt="...">
+                <img src="./assets/img/moreabout/dip2.jpg" class="img-thumbnail" alt="...">
+
+
+                <h3>FAI System</h3>
+                <p>The self-developed FAI (First Article Inspection) image inspection system can improve the accuracy of the first article, so as to ensure the first-time pass rate of the processed product.</p>
+                <blockquote>
+                    <ul>
+                        <li>Verify the correctness of the SMT program and component location. Avoid misalignment of components and incorrect installation, etc.</li>
+                        <li>Consistency checks of component capacity and specifications with BOM to ensure correct installation.</li>
+                        <li>Verification of the consistency of installation orientation, parameters and designer's intent</li>
+                    </ul>
+                </blockquote>
+                <p>During production, if the first article inspection takes too long, the installed solder will be exposed for a long time, resulting in a decrease in optimality, in addition to a decrease in FAI on the circuit board on the furnace. The use of the FAI first inspection system can greatly reduce the time of the first inspection and absolutely avoid the above problems, in this case, the first inspection rate will reach more than 95%.</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<main role="main" class="container">
+    <div class="row">
+        <div class="col-md-8 blog-main">
+            <h3 class="pb-4 mb-4 font-italic border-bottom">
+
+            </h3>
+            <div class="blog-post">
+
+                <h2 style="color: #0c85d0;">Measurement for QC</h2>
+                <blockquote>
+                    <ul>
+                        <li>Quality Awareness – Through continuous training, quality awareness is universally supported. Quality checks account for the largest proportion of performance evaluations. It operates in strict accordance with the quality management system.</li>
+                        <li>trace</li>
+                        <li>Prevention - The inspection of incoming materials should be carried out in strict accordance with the BOM.
+                            and the Code of Practice and Instructions should be revised. The implementation of induction should also be strictly enforced.</li>
+                        <li>Process Control – Record product status and facts at control points. Exceptions should be on the notice. In addition, in the event of a fatal anomaly, shutdown and reform measures should be taken. The operator, i.e., the QC maintenance supervisor, should bear the primary responsibility for anomalies arising from the joint and several liability between adjacent processes and related to promotion bonuses.</li>
+                    </ul>
+                </blockquote>
+
+                <h3>Material Control - Traceability and Identification</h3>
+                <p>Relevant regulations are formulated according to the type, quantity and requirements of materials and parts required in production to ensure the quality of processed materials and maintain the suitability and formability of the products in processing. Identify the materials in the process to ensure the identification of the materials and the traceability of the verification status.</p>
+
+                <h3> Equipment control and maintenance</h3>
+                <p>We establish regulations based on equipment, measuring instruments, etc., which affect quality characteristics, verify their accuracy before use, and periodically verify and recalibrate. In addition, they should be properly stored and protected between uses. Develop a preventative facility maintenance plan to ensure equipment accuracy, production capacity, and continuous processing capabilities</p>
+                <h3> Management of critical process controls</h3>
+                <p>Focus on controlling product characteristics that are difficult to measure, and special capabilities and processes for the maintenance and operation of related equipment. Timely improvement and correction of deficiencies in the process. In addition, process parameters are monitored, controlled, and verified at appropriate frequencies to investigate whether all facilities and operators are meeting product quality requirements.</p>
+
+                <h3>File control</h3>
+                <p>Ensure that the requirements in the process planning are implemented and that the process-related documents used are valid versions.</p>
+                <h3>Process change control</h3>
+                <p>Ensure the correctness of process changes and their implementation, specify changes in responsibilities and authority, evaluate products after changes, and verify the expected impact of changes.</p>
+                <h3>Verified controls</h3>
+                <p>Identify the verification status of the process in an appropriate manner, distinguish between unverified, qualified or non-conforming products, and verify the responsibility for identity through identification.</p>
+                <h3>Nonconformance control</h3>
+                <p>Develop and implement sub-quality product control procedures to detect, clearly identify, and isolate storage. In addition, identify and monitor the disposal methods of non-conforming products to prevent customers from receiving it and their accidental use, in order to avoid further processing of non-conforming products and their unnecessary costs.</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<main role="main" class="container">
+    <div class="row">
+        <div class="col-md-8 blog-main">
+            <h3 class="pb-4 mb-4 font-italic border-bottom">
+
+            </h3>
+            <div class="blog-post">
+
+                <h2 style="color: #0c85d0;">Attention to detail</h2>
+                <img src="./assets/img/moreabout/细节.png" class="img-thumbnail" alt="...">
+                <blockquote>
+                    <ul>
+                        <li>Every employee is required to wear anti-static clothing before entering the workshop.</li>
+                        <li>It must pass a static test before working on the assembly line.</li>
+                        <li>Electrostatic wrist straps should be worn when working.</li>
+                        <li>The packaging must be packed in an anti-static bag.</li>
+                        <li>Suppresses the accumulation of static electricity and the generation of static electricity</li>
+                        <li>Safely, quickly and effectively eliminate generated static electricity</li>
+                        <li>Implement an electrostatic protection zone (EPA) and a good grounding system</li>
+                    </ul>
+                </blockquote>
+
+                <h3>Regular check-ups</h3>
+                <blockquote>
+                    <ul>
+                        <li>Regular maintenance of production equipment.</li>
+                        <li>Regular training and review of employees in each position.</li>
+                        <li>Regularly inspect the production environment and warehouse environment, such as temperature, humidity.</li>
+                        <li>The workshop is cleaned and dusted daily.</li>
+                        <li>Unify storage production and its management to avoid misuse.</li>
+                        <li>It has an online documentary system, and the responsibility for details is clear.</li>
+                    </ul>
+                </blockquote>
+
+                <h3> High precision stencil</h3>
+                <blockquote>
+                    <ul>
+                        <li>Prevents insufficient solder (poor soldering or fading)</li>
+                        <li>Too much solder (solder balls and short circuits)</li>
+                        <li>Prevents strain imbalance of molten solder (component pad irregularities, pad irregularities, etc.)</li>
+
+                    </ul>
+                </blockquote>
+
+            </div>
+        </div>
+    </div>
+</main>
+<main role="main" class="container">
+    <div class="row">
+        <div class="col-md-8 blog-main">
+            <h3 class="pb-4 mb-4 font-italic border-bottom">
+
+            </h3>
+            <div class="blog-post">
+
+                <h2 style="color: #0c85d0;">案例分析之 Intel M3 8100Y 焊接</h2>
+                <img src="./assets/img/moreabout/案例分析.png" class="img-thumbnail" alt="...">
+                <!--                <blockquote>-->
+                <!--                    <ul>-->
+                <!--                        <li>每位员工在进入车间前都必须穿戴防静电服。</li>-->
+                <!--                        <li>在上流水线上工作之前必须通过静态测试。</li>-->
+                <!--                        <li>工作时应佩戴静电腕带。</li>-->
+                <!--                        <li>包装必须用防静电袋包装。</li>-->
+                <!--                        <li>抑制静电的积累和静电的产生</li>-->
+                <!--                        <li>安全、快速、有效地消除产生的静电</li>-->
+                <!--                        <li>实施静电保护区 （EPA） 和良好的接地系统</li>-->
+                <!--                    </ul>-->
+                <!--                </blockquote>-->
+
+                <h3>Process Analysis:：</h3>
+                <h4>PCB Process:</h4>
+                <p>8 layers, thickness 1.0mm, OSP process.
+                    The PCB of OSP process should not be exposed to direct sunlight, and the storage environment requirements: relative humidity: 30~70%, temperature: 15~30°C.
+                    When unpacking at SMT site, the humidity indicator card must be checked and brought online within 12 hours, and kept to pass the furnace within 30 minutes. If the furnace time is too long, the solder paste will corrode and break the surface layer of the OSP and affect the soldering. During the production process, it is necessary to avoid touching the surface of the PCB directly with your hands, so as to avoid oxidation caused by sweat contamination on the surface. After the SMT single-sided patch is completed, the second-sided SMT part patch assembly must be completed within 24 hours. After completing the SMT, the DIP hand plug-in should be completed in the shortest possible time (up to 36 hours). OSP PCB should not be baked, and high-temperature baking will easily cause OSP discoloration and deterioration. If the empty board exceeds the service life, it can be returned to the PCB factory for OSP rework.</p>
+                <h4>CPU Process：1515-ball micro-FCBGA。</h4>
+
+                <p>    1515-ball micro-FCBGAThe welding of process packaging pays great attention to the design of the process, and the window opening method of each solder joint is different, and the furnace temperature, placement pressure, and so on must be set. If the process is not suitable, it will lead to poor BGA welding.</p>
+
+                <h3> 工艺设计与执行：</h3>
+                <!--                <blockquote>-->
+                <!--                    <ul>-->
+                <!--                        <li>防止焊锡不足（焊接不良或褪色）</li>-->
+                <!--                        <li>焊锡过多（焊球和短路）</li>-->
+                <!--                        <li>防止熔融焊料的应变不平衡（元件焊盘不规则、焊盘不规则等）</li>-->
+
+                <!--                    </ul>-->
+                <!--                </blockquote>-->
+                <h4>1.Chip baking</h4>
+                <p>120±5 °C，24hours。(According to the moisture-proof situation of incoming materials and the characteristics of materials)</p>
+                <h4>2.Stencil thickness：</h4>
+                <p>0.08mm</p>
+                <h4>3.Local optimization of stencil openings：</h4>
+                <p>The window design is processed in different areas (the size and shape of each area and each solder joint may be different), and the shape and size of the tin under the design are analyzed according to the actual situation of the PCB and BGA.</p>
+                <h4>4.Solder paste：</h4>
+                <p>Use Alpha OM-340 5# powder.</p>
+                <h4>5.Placement line configuration:</h4>
+                <p>JUKI F-3RAL+2070+2080,Adjust the patch pressure：0~0.5Pa。
+                </p>
+                <h4>6.Furnace temperature control：</h4>
+                <p>使用劲托AS-1000 10温区热风回流焊炉，1~10区炉温设定：135，145，155，165，185，195，205，235，250，235。链速85cm/min。</p>
+                <h4>7.Visual inspection：</h4>
+                <p>X-RAY 100% inspection, FAI first article confirmation.</p>
+
+                <h3 style="color: #0c85d0;"> outcome：</h3>
+                <h5>Trial production 40PCS Intel M3 8100Y mainboard，</h5><h5 style="color: #2aa5ff;">AOIDetection yield:100%</h5><h5 style="color: #2aa5ff;;">X-rayDetection yield :100%</h5><h5 style="color: #2aa5ff;">Functional test yield:100%</h5>
+
+            </div>
+        </div>
+    </div>
+</main>
+
+<!--footer-->
+<div class="container mt-5">
+    <footer class="bg-white border-top p-3 text-muted small">
+        <div class="row align-items-center justify-content-between">
+            <div>
+                <span class="navbar-brand mr-2"><strong></strong></span> Shenzhen E-Lannet Technology Co., Ltd ;
+                <script>document.write(new Date().getFullYear())</script>
+                .E-Lannet Technology.
+            </div>
+            <div>
+                Made with <a target="_blank" class="text-secondary font-weight-bold" href="">Shenzhen E-Lannet Technology Co</a> by LJM.
+            </div>
+        </div>
+    </footer>
+</div>
+<!-- Core JS  -->
+<script src="assets/libs/jquery/dist/jquery.min.js"></script>
+<script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/libs/svg-injector/dist/svg-injector.min.js"></script>
+<script src="assets/libs/feather-icons/dist/feather.min.js"></script>
+<!-- Quick JS -->
+<script src="assets/js/quick-website.js"></script>
+<!-- Feather Icons -->
+<script>
+    feather.replace({
+        'width': '1em',
+        'height': '1em'
+    })
+</script>
+</body>
+
+</html>

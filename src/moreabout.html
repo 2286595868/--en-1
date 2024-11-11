@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="JM" >
+    <title>易联无双</title>
+    <!-- Preloader -->
+    <style>
+        @keyframes hidePreloader {
+            0% {
+                width: 100%;
+                height: 100%;
+            }
+
+            100% {
+                width: 0;
+                height: 0;
+            }
+        }
+
+        body>div.preloader {
+            position: fixed;
+            background: white;
+            width: 100%;
+            height: 100%;
+            z-index: 1071;
+            opacity: 0;
+            transition: opacity .5s ease;
+            overflow: hidden;
+            pointer-events: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body:not(.loaded)>div.preloader {
+            opacity: 1;
+        }
+
+        body:not(.loaded) {
+            overflow: hidden;
+        }
+
+        body.loaded>div.preloader {
+            animation: hidePreloader .5s linear .5s forwards;
+        }
+    </style>
+    <script>
+        window.addEventListener("load", function() {
+            setTimeout(function() {
+                document.querySelector('body').classList.add('loaded');
+            }, 300);
+        });
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" href="../src/assets/img/brand/logo.png" type="image/png">
+    <link rel="stylesheet" href="assets/libs/@fortawesome/fontawesome-free/css/all.min.css">
+    <!-- Quick CSS -->
+    <link rel="stylesheet" href="assets/css/quick-website.css" id="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container">
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">
+            <img alt="Image placeholder" src="assets/img/brand/logo.png" id="navbar-logo" >
+        </a>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="./index.html">首页 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./moreabout.html">详细信息</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./aboutus.html">关于我们</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">联系我们</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./e-moreabout.html">EN/中</a>
+                </li>
+                <div class="dropdown-divider"></div>
+            </ul>
+        </div>
+
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mt-4 mt-lg-0 ml-auto">
+                <li class="nav-item dropdown dropdown-animate" data-toggle="hover">
+                    <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">更多</a>
+                    <div class="dropdown-menu dropdown-menu-single">
+                        <a href="index.html" class="dropdown-item">首页</a>
+                        <a href="./aboutus.html" class="dropdown-item">关于我们</a>
+                        <a href="./moreabout.html" class="dropdown-item">详细信息</a>
+                        <a href="./contact.html" class="dropdown-item">联系我们</a>
+                        <a href="./e-moreabout.html" class="dropdown-item">EN/中</a>
+                        <div class="dropdown-divider"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+    <!-- Main content -->
+<!--    <section class="slice py-8 bg-dark">-->
+<!--        <div class="container py-5">-->
+<!--            <div class="row row-grid align-items-center">-->
+<!--                <div class="col-lg-8 text-center text-lg-left">-->
+<!--                    &lt;!&ndash; Heading &ndash;&gt;-->
+<!--                    <h1 class="text-white mb-4">-->
+<!--                        We built incredible web products for designers &amp; developers-->
+<!--                    </h1>-->
+<!--                    &lt;!&ndash; Text &ndash;&gt;-->
+<!--                    <p class="lead text-white opacity-8">-->
+<!--                        For over 5 years, we pride ourselves on our commitment to excellence, as well as our ability to deliver for our customers.-->
+<!--                    </p>-->
+<!--                    &lt;!&ndash; Buttons &ndash;&gt;-->
+<!--                    <div class="mt-5">-->
+<!--                        <a href="#" class="btn btn-warning btn-lg btn-icon">-->
+<!--                            <span class="btn-inner&#45;&#45;icon">-->
+<!--                                <i data-feather="edit-3"></i>-->
+<!--                            </span>-->
+<!--                            <span class="btn-inner&#45;&#45;text">Contact us</span>-->
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--    </section>-->
+
+
+
+
+
+<!--    <section class="slice slice-lg">-->
+<!--        <div class="container">-->
+<!--            <span class="badge badge-primary badge-pill">Our vision</span>-->
+<!--            <div class="row mt-4">-->
+<!--                <div class="col-lg-6 pr-lg-5">-->
+<!--                    <p class="h5 lh-180 mb-3">-->
+<!--                        Our vision is to build the most efficient and intuitive UI stuff on the web in order to give developers some amazing possibilities to create high quality digital products with less time and money spent.-->
+<!--                    </p>-->
+<!--                </div>-->
+<!--                <div class="col-lg-6">-->
+<!--                    <p class="lead lh-180">-->
+<!--                        She exposed painted fifteen are noisier mistake led waiting. Surprise not wandered speedily husbands although yet end. Are court tiled cease young built fat one man taken. We highest ye friends is exposed equally in. Ignorant had-->
+<!--                        too strictly followed.-->
+<!--                    </p>-->
+<!--                    <p class="lead lh-180">-->
+<!--                        Form face evening above years for i fruitful us creature void days. Upon upon fruitful us fill earth was set tree above yielding to air image cattle seed night lesser saying. Gathered, fourth wherein air.-->
+<!--                    </p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+
+
+<!--    <section class="slice slice-lg">-->
+<!--        <div class="container">-->
+<!--            <div class="row">-->
+<!--                <div class="col-lg-5 col-6">-->
+<!--                    <img src="assets/img/theme/light/img-v-4.jpg" alt="Image" class="rounded-lg img-fluid" />-->
+<!--                    <div class="text-right mt-4">-->
+<!--                        <img src="assets/img/theme/light/img-1-1000x1000.jpg" alt="Image" class="rounded-lg img-fluid w-50" />-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-lg-7 col-6">-->
+<!--                    <img src="assets/img/theme/light/img-1-1000x800.jpg" alt="Image" class="rounded-lg img-fluid w-75" />-->
+<!--                    <div class="text-right mt-4">-->
+<!--                        <img src="assets/img/theme/light/img-2-1000x800.jpg" alt="Image" class="rounded-lg img-fluid" />-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+
+
+<!--    <section class="slice slice-lg pt-10 bg-primary">-->
+<!--        &lt;!&ndash; SVG separator &ndash;&gt;-->
+<!--        <div class="shape-container shape-line shape-position-top shape-orientation-inverse">-->
+<!--            <svg width="2560px" height="100px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 2560 100" style="enable-background:new 0 0 2560 100;" xml:space="preserve" class="">-->
+<!--                <polygon points="2560 0 2560 100 0 100"></polygon>-->
+<!--            </svg>-->
+<!--        </div>-->
+<!--        &lt;!&ndash; Container &ndash;&gt;-->
+<!--        <div class="container">-->
+<!--            <div class="row row-grid">-->
+<!--                <div class="col-lg-8">-->
+<!--                    &lt;!&ndash; Badge &ndash;&gt;-->
+<!--                    <span class="badge badge-warning badge-pill">Made with Bootstrap</span>-->
+<!--                    &lt;!&ndash; Title &ndash;&gt;-->
+<!--                    <h2 class="my-4 text-white">Websites, Dashboards and Web Apps</h2>-->
+<!--                    &lt;!&ndash; Text &ndash;&gt;-->
+<!--                    <p class="lead text-white lh-190">-->
+<!--                        Build one product from the ground up using our dedicated tools. A beautiful ecosystem built to sustain productivity and encourage developers to create modern and professional high-end products.-->
+<!--                    </p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            &lt;!&ndash; Milestones &ndash;&gt;-->
+<!--            <div class="row mt-6">-->
+<!--                <div class="col-lg-6">-->
+<!--                    <div class="row">-->
+<!--                        <div class="col-sm-4">-->
+<!--                            <div class="card shadow-lg rounded-lg border-0 mb-sm-0">-->
+<!--                                <div class="p-4 text-center text-sm-left">-->
+<!--                                    <h3 class="mb-0">10k</h3>-->
+<!--                                    <p class="text-muted mb-0">-->
+<!--                                        Customers-->
+<!--                                    </p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="col-sm-4">-->
+<!--                            <div class="card shadow-lg rounded-lg border-0 mb-sm-0">-->
+<!--                                <div class="p-4 text-center text-sm-left">-->
+<!--                                    <h3 class="mb-0">55k</h3>-->
+<!--                                    <p class="text-muted mb-0">-->
+<!--                                        Downloads-->
+<!--                                    </p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="col-sm-4">-->
+<!--                            <div class="card shadow-lg rounded-lg border-0 mb-sm-0">-->
+<!--                                <div class="p-4 text-center text-sm-left">-->
+<!--                                    <h3 class="mb-0">98%</h3>-->
+<!--                                    <p class="text-muted mb-0">-->
+<!--                                        Happy users-->
+<!--                                    </p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+
+
+<!--    <section class="slice slice-lg pb-5">-->
+<!--        <div class="container">-->
+<!--            &lt;!&ndash; Section title &ndash;&gt;-->
+<!--            <div class="row mb-5 justify-content-center text-center">-->
+<!--                <div class="col-lg-8 col-md-10">-->
+<!--                    <h2 class=" mt-4">The amazing team</h2>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="row">-->
+<!--                <div class="col-lg-3 col-sm-6 mb-5">-->
+<!--                    <div data-animate-hover="2">-->
+<!--                        <div class="animate-this">-->
+<!--                            <a href="#">-->
+<!--                                <img alt="Image placeholder" class="img-fluid rounded shadow" src="assets/img/theme/light/person-1.jpg">-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                        <div class="mt-3">-->
+<!--                            <h5 class="h6 mb-0">Heather Wright</h5>-->
+<!--                            <p class="text-muted text-sm mb-0">Founded &amp; Chairman</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-lg-3 col-sm-6 mb-5">-->
+<!--                    <div data-animate-hover="2">-->
+<!--                        <div class="animate-this">-->
+<!--                            <a href="#">-->
+<!--                                <img alt="Image placeholder" class="img-fluid rounded shadow" src="assets/img/theme/light/person-2.jpg">-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                        <div class="mt-3">-->
+<!--                            <h5 class="h6 mb-0">Monroe Parker</h5>-->
+<!--                            <p class="text-muted text-sm mb-0">Back End Developer</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-lg-3 col-sm-6 mb-5">-->
+<!--                    <div data-animate-hover="2">-->
+<!--                        <div class="animate-this">-->
+<!--                            <a href="#">-->
+<!--                                <img alt="Image placeholder" class="img-fluid rounded shadow" src="assets/img/theme/light/person-3.jpg">-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                        <div class="mt-3">-->
+<!--                            <h5 class="h6 mb-0">John Sullivan</h5>-->
+<!--                            <p class="text-muted text-sm mb-0">Front End Developer</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-lg-3 col-sm-6 mb-5">-->
+<!--                    <div data-animate-hover="2">-->
+<!--                        <div class="animate-this">-->
+<!--                            <a href="#">-->
+<!--                                <img alt="Image placeholder" class="img-fluid rounded shadow" src="assets/img/theme/light/person-4.jpg">-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                        <div class="mt-3">-->
+<!--                            <h5 class="h6 mb-0">James Lewis</h5>-->
+<!--                            <p class="text-muted text-sm mb-0">Vice Chairman</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="row">-->
+<!--                <div class="col-lg-3 col-sm-6 mb-5 mb-sm-0">-->
+<!--                    <div data-animate-hover="2">-->
+<!--                        <div class="animate-this">-->
+<!--                            <a href="#">-->
+<!--                                <img alt="Image placeholder" class="img-fluid rounded shadow" src="assets/img/theme/light/person-5.jpg">-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                        <div class="mt-3">-->
+<!--                            <h5 class="h6 mb-0">Danielle Levin</h5>-->
+<!--                            <p class="text-muted text-sm mb-0">Sales Manager</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-lg-3 col-sm-6 mb-5 mb-sm-0">-->
+<!--                    <div data-animate-hover="2">-->
+<!--                        <div class="animate-this">-->
+<!--                            <a href="#">-->
+<!--                                <img alt="Image placeholder" class="img-fluid rounded shadow" src="assets/img/theme/light/person-6.jpg">-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                        <div class="mt-3">-->
+<!--                            <h5 class="h6 mb-0">Martin Gray</h5>-->
+<!--                            <p class="text-muted text-sm mb-0">UI/UX Designer</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-lg-3 col-sm-6 mb-5 mb-sm-0">-->
+<!--                    <div data-animate-hover="2">-->
+<!--                        <div class="animate-this">-->
+<!--                            <a href="#">-->
+<!--                                <img alt="Image placeholder" class="img-fluid rounded shadow" src="assets/img/theme/light/person-7.jpg">-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                        <div class="mt-3">-->
+<!--                            <h5 class="h6 mb-0">George Squier</h5>-->
+<!--                            <p class="text-muted text-sm mb-0">Marketing Executive</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-lg-3 col-sm-6 mb-0">-->
+<!--                    <div data-animate-hover="2">-->
+<!--                        <div class="animate-this">-->
+<!--                            <a href="#">-->
+<!--                                <img alt="Image placeholder" class="img-fluid rounded shadow" src="assets/img/theme/light/person-8.jpg">-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                        <div class="mt-3">-->
+<!--                            <h5 class="h6 mb-0">Jesse Stevens</h5>-->
+<!--                            <p class="text-muted text-sm mb-0">Ads Manager</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+
+
+<main role="main" class="container">
+    <div class="row">
+        <div class="col-md-8 blog-main">
+            <h3 class="pb-4 mb-4 font-italic border-bottom">
+                PCB 设计：业务概要
+            </h3>
+
+            <div class="blog-post">
+                <blockquote>
+                    <ul>
+                        <li>10年以上专业设计经验，工艺改进，完成技术支持业务。 支持主流设计工具：Allegro、Pads、Mentor Expedition</li>
+                        <li>设计类型：高速、仿真、软硬混合、高密度、高压、高效率、射频、背板、ATE、柔性电路、软硬结合板、铝电路板等。</li>
+                        <li>满足客户在设计、进度、成本、材料、制造工艺及其限制、可靠性、安全性等方面的专业知识。</li>
+                        <li>以高速设计为主导，对高速板及工艺的深入研究和技术积累。</li>
+                        <li>周密的 DFX 模拟系统，也考虑到了设计初期的生产问题。</li>
+                    </ul>
+                </blockquote>
+
+                <h2 style="color: #0c85d0;">PCB 设计：能力</h2>
+
+                <img src="./assets/img/moreabout/pcb.png" class="img-thumbnail" alt="...">
+                <h3>信号完整性分析（SI Simulation Analysis)</h3>
+                <p>我们有完整的 SI 设计和 SI 问题的解决方案流程。根据设计和信号完整性时序的要求，前布线仿真可以设计人员选择元件，调整零件布局，规划系统时钟网络，确定关键网络的端接策略和拓扑结构。并确定关键网络的终止策略和拓扑结构。布线后仿真可以评估反射、振铃、过冲、串扰和时序等布线参数是否满足设计要求，帮助揭示潜在的 SI 问题，提高设计的可靠性。</p>
+
+                <h3>电源完整性 （PI Simulation Analysis）</h3>
+                <p>如果电网的设计有缺陷，会直接影响整个系统的稳定性。我们在大电流电网设计领域积累了大量的经验。结合前期设计中现有的仿真方法，我们可以检测早期风险，优化器件和电源模块的布局，没有。的焊盘，电容分布，保证了供电网络设计的可靠性。</p>
+                <h3>可制造性设计 （DFM）</h3>
+                <p>电路板、组件及其结构将在成本、效率和质量方面做出最佳选择，因为从产品规划开始就全面考虑了产品使用时，就考虑到了与生产相关的过程问题。特别是，电路板的 Layout 需要符合此选择。并在设计过程中，各环节的板面检查和修改均采用各种模拟软件和专门的检验规定，确保产品从设计到生产的良率，大大提高了产品设计的可制造性，从而达到了省时、省料、省成本的效果。</p>
+            </div>
+
+<!--            <div class="blog-post">-->
+<!--                <h2 class="blog-post-title">Another blog post</h2>-->
+<!--                <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>-->
+
+<!--                <p>I am ready for the road less traveled. Already <a href="#">brushing off the dust</a>. Yeah, you're lucky if you're on her plane. I used to bite my tongue and hold my breath. Uh, She’s a beast. I call her Karma (come back). Black ray-bans, you know she's with the band. I can't sleep let's run away and don't ever look back, don't ever look back.</p>-->
+<!--                <blockquote>-->
+<!--                    <p>Growing fast into a <strong>bolt of lightning</strong>. Be careful Try not to lead her on</p>-->
+<!--                </blockquote>-->
+<!--                <p>I'm intrigued, for a peek, heard it's fascinating. Oh oh! Wanna be a victim ready for abduction. She's got that international smile, oh yeah, she's got that one international smile. Do you ever feel, feel so paper thin. I’m gon’ put her in a coma. Sun-kissed skin so hot we'll melt your popsicle.</p>-->
+<!--                <p>This is transcendental, on another level, boy, you're my lucky star.</p>-->
+<!--            </div>&lt;!&ndash; /.blog-post &ndash;&gt;-->
+
+<!--            <div class="blog-post">-->
+<!--                <h2 class="blog-post-title">New feature</h2>-->
+<!--                <p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>-->
+
+<!--                <p>From Tokyo to Mexico, to Rio. Yeah, you take me to utopia. I'm walking on air. We'd make out in your Mustang to Radiohead. I mean the ones, I mean like she's the one. Sun-kissed skin so hot we'll melt your popsicle. Slow cooking pancakes for my boy, still up, still fresh as a Daisy.</p>-->
+<!--                <ul>-->
+<!--                    <li>I hope you got a healthy appetite.</li>-->
+<!--                    <li>You're never gonna be unsatisfied.</li>-->
+<!--                    <li>Got a motel and built a fort out of sheets.</li>-->
+<!--                </ul>-->
+<!--                <p>Don't need apologies. Boy, you're an alien your touch so foreign, it's <em>supernatural</em>, extraterrestrial. Talk about our future like we had a clue. I can feel a phoenix inside of me.</p>-->
+<!--            </div>&lt;!&ndash; /.blog-post &ndash;&gt;-->
+
+<!--            <nav class="blog-pagination">-->
+<!--                <a class="btn btn-outline-primary" href="#">Older</a>-->
+<!--                <a class="btn btn-outline-secondary disabled">Newer</a>-->
+<!--            </nav>-->
+
+        </div>
+    </div>
+
+</main>
+
+
+<main role="main" class="container">
+    <div class="row">
+        <div class="col-md-8 blog-main">
+            <h3 class="pb-4 mb-4 font-italic border-bottom">
+            </h3>
+            <div class="blog-post">
+                <h2 style="color: #0c85d0;">材料采购</h2>
+                <img src="./assets/img/moreabout/材料采购.png" class="img-thumbnail" alt="...">
+                <h3>拥有一批优质的供应商</h3>
+                <p>我们每年采购 4000 多个项目 平均每个项目大约有 100 种材料。我们与正规代理商合作，积累了一批优质的供应商。</p>
+
+                <h3>拥有非常好的元器件采购实践经验</h3>
+                <p>采购人员经过严格的培训，具有非常好的元器件采购实践经验，能够获得专业渠道并快速完成中/小批量的元器件采购</p>
+                <h3>提供最优质、最快捷的服务。</h3>
+                <p>通过访问互联网的专用网络，采购部门可以及时获取最新的国际市场信息，快速准确地解决问题，并为客户提供最优质、最快捷的服务。</p>
+                <h3>一个完整的组件采购流程</h3>
+                <p>研发部门建立了一个完整的组件采购流程，我们在此基础上实时提供服务和更新。此外，程序操作有效地保证了客户获得具有成本效益的材料，也确保了及时交货。常见元件有：电容器、电阻器、电感器、连接器、二极管、电阻器、继电器、电位器、传感器等。</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<main role="main" class="container">
+    <div class="row">
+        <div class="col-md-8 blog-main">
+            <h3 class="pb-4 mb-4 font-italic border-bottom"></h3>
+
+            <div class="blog-post">
+                <h2 style="color: #0c85d0;">工艺能力</h2>
+                <img src="./assets/img/moreabout/制作工艺.png" class="img-thumbnail" alt="...">
+                <p>公司拥有六条全自动松下SMT生产线，可以为客户贴装最小元器件的产品（chips01005，QFP BGA间距0.3Pich）。此外，为了确保 SMT 贴装系统的可靠性，该公司引入了 10 区回流焊、X-RAY 检查机、AOI 检查机、钢网超声波清洗机等</p>
+                <img src="./assets/img/moreabout/工厂.png" class="img-thumbnail" alt="...">
+
+                <h3>DIP Flow</h3>
+                <img src="./assets/img/moreabout/dip.png" class="img-thumbnail" alt="...">
+                <img src="./assets/img/moreabout/dip2.jpg" class="img-thumbnail" alt="...">
+
+
+                <h3>FAI System</h3>
+                <p>自主研发的 FAI（首件检测）图像检测系统可以提高首件的精度，从而保证加工产品的一次合格率。</p>
+                <blockquote>
+                    <ul>
+                        <li>验证 SMT 程序和组件位置的正确性。避免组件的错位和错误安装等。</li>
+                        <li>组件容量和规格与 BOM 的一致性检查，以确保安装的正确性。</li>
+                        <li>安装方向、参数与设计师意图的一致性验证</li>
+                    </ul>
+                </blockquote>
+                <p>在生产过程中，如果首件检查时间过长，安装好的焊料长时间暴露会导致其最佳性降低，此外，炉子上电路板上的 FAI 会降低。使用 FAI 首检系统可以大大缩短首检时间，绝对避免上述问题，在这种情况下，首检率将达到 95% 以上。</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<main role="main" class="container">
+    <div class="row">
+        <div class="col-md-8 blog-main">
+            <h3 class="pb-4 mb-4 font-italic border-bottom">
+
+            </h3>
+            <div class="blog-post">
+
+                <h2 style="color: #0c85d0;">Measurement for QC</h2>
+                <blockquote>
+                    <ul>
+                        <li>质量意识--通过持续的培训，质量意识得到了普遍的支持。质量检查在绩效评估中占比最大。它严格按照质量管理体系运行.</li>
+                        <li>跟踪</li>
+                        <li>预防--对来料的检验应严格按照 BOM 进行。
+                            并且应修订操作守则和指示。归纳的实施也应严格执行。</li>
+                        <li>过程控制--记录控制点上的产品状态和事实。异常情况应在通知上。此外，当出现致命的异常时，应采取停产和改革措施。操作员，即 QC 维护主管，应承担因相邻流程之间相互承担连带责任并与晋升奖金相关的异常情况而产生的主要责任。</li>
+                    </ul>
+                </blockquote>
+
+                <h3>材料控制 - 可追溯性和识别性</h3>
+                <p>根据生产中所需材料和零件的种类、数量和要求制定相关规定，以确保加工材料的质量并保持加工中产品的适用性和可成型性。识别过程中的物料，保证物料的识别性和验证状态的可追溯性。</p>
+
+                <h3> 设备控制与维护</h3>
+                <p>根据影响质量特性的设备、测量仪器等制定相关规定，并在使用前验证其准确性，并定期验证、重新校准。此外，它们应在两次使用之间妥善存放和保护。制定预防性设施维护计划，以确保设备的准确性、生产能力和连续加工能力</p>
+                <h3> 关键过程控制的管理</h3>
+                <p>重点控制难以衡量的产品特性，对相关设备的维护和操作进行特殊能力和流程。及时改进和纠正过程中的不足。此外，以适当的频率监测、控制和验证加工参数，以调查所有设施和操作员是否都能满足产品质量的要求。</p>
+
+                <h3>文件控制</h3>
+                <p>确保实现流程规划中的需求，并且使用的流程相关文件是有效版本。</p>
+                <h3>工艺变更控制</h3>
+                <p>确保流程变更及其实施的正确性，指定职责和权限的变化，在变更后评估产品，并验证变更的预期影响。</p>
+                <h3>验证的控制</h3>
+                <p>以适当的方式识别流程的验证状态，区分未验证、合格或不合格的产品，并通过识别来验证身份的责任。</p>
+                <h3>不合格项控制</h3>
+                <p>制定并实施次质量产品控制程序，以检测、明确识别和隔离存储。此外，确定和监控不合格产品的处理方法，以防止客户收到它及其意外使用，以避免不合格产品的进一步处理及其不必要的成本。</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<main role="main" class="container">
+    <div class="row">
+        <div class="col-md-8 blog-main">
+            <h3 class="pb-4 mb-4 font-italic border-bottom">
+
+            </h3>
+            <div class="blog-post">
+
+                <h2 style="color: #0c85d0;">细节的注重</h2>
+                <img src="./assets/img/moreabout/细节.png" class="img-thumbnail" alt="...">
+                <blockquote>
+                    <ul>
+                        <li>每位员工在进入车间前都必须穿戴防静电服。</li>
+                        <li>在上流水线上工作之前必须通过静态测试。</li>
+                        <li>工作时应佩戴静电腕带。</li>
+                        <li>包装必须用防静电袋包装。</li>
+                        <li>抑制静电的积累和静电的产生</li>
+                        <li>安全、快速、有效地消除产生的静电</li>
+                        <li>实施静电保护区 （EPA） 和良好的接地系统</li>
+                    </ul>
+                </blockquote>
+
+                <h3>定期检查</h3>
+                <blockquote>
+                    <ul>
+                        <li>定期维护生产设备。</li>
+                        <li>定期培训，并对各岗位员工进行审查。</li>
+                        <li>定期检查生产环境和仓库环境，如温度、湿度。</li>
+                        <li>每天对车间进行清洁和除尘。</li>
+                        <li>统一存储生产及其管理，避免误用。</li>
+                        <li>拥有在线跟单系统，细节责任明确。</li>
+                    </ul>
+                </blockquote>
+
+                <h3> 高精度模板（High precision stencil）</h3>
+                <blockquote>
+                    <ul>
+                        <li>防止焊锡不足（焊接不良或褪色）</li>
+                        <li>焊锡过多（焊球和短路）</li>
+                        <li>防止熔融焊料的应变不平衡（元件焊盘不规则、焊盘不规则等）</li>
+
+                    </ul>
+                </blockquote>
+
+            </div>
+        </div>
+    </div>
+</main>
+<main role="main" class="container">
+    <div class="row">
+        <div class="col-md-8 blog-main">
+            <h3 class="pb-4 mb-4 font-italic border-bottom">
+
+            </h3>
+            <div class="blog-post">
+
+                <h2 style="color: #0c85d0;">案例分析之 Intel M3 8100Y 焊接</h2>
+                <img src="./assets/img/moreabout/案例分析.png" class="img-thumbnail" alt="...">
+<!--                <blockquote>-->
+<!--                    <ul>-->
+<!--                        <li>每位员工在进入车间前都必须穿戴防静电服。</li>-->
+<!--                        <li>在上流水线上工作之前必须通过静态测试。</li>-->
+<!--                        <li>工作时应佩戴静电腕带。</li>-->
+<!--                        <li>包装必须用防静电袋包装。</li>-->
+<!--                        <li>抑制静电的积累和静电的产生</li>-->
+<!--                        <li>安全、快速、有效地消除产生的静电</li>-->
+<!--                        <li>实施静电保护区 （EPA） 和良好的接地系统</li>-->
+<!--                    </ul>-->
+<!--                </blockquote>-->
+
+                <h3>工艺分析：</h3>
+                <h4>PCB工艺:</h4>
+                <p>8层,厚度1.0mm,OSP工艺。
+                    OSP工艺的PCB不可暴露于直接日照环境, 储存环境要求：相对湿度: 30~70%, 温度: 15~30℃。</p><br><p>
+                在SMT 现场拆封时，必须检查湿度显示卡，并于12小时内上线，保持30分钟内过炉。炉前时间过长锡膏会腐蚀破OSP表层影响焊接。生产过程中要避免直接用手接触PCB 表面，以免其表面受汗液污染而发生氧化。SMT单面贴片完成后，必须于24小时内要完成第二面SMT零件贴片组装。完成SMT后要在尽可能短的时间内（最长36小时）完成DIP手插件。OSP PCB不可以烘烤，高温烘烤容易使OSP变色劣化。假若空板超过使用期限，可以退PCB厂进行OSP重工。</p>
+                <h4>CPU工艺：1515-ball micro-FCBGA。</h4>
+
+                <p>    1515-ball micro-FCBGA工艺封装的焊接非常讲究工艺的设计，每一个焊点的开窗方式都不一样，炉温，贴装压力，等等都要有设定。工艺不适配就会导致BGA焊接不良。</p>
+
+                <h3> 工艺设计与执行：</h3>
+<!--                <blockquote>-->
+<!--                    <ul>-->
+<!--                        <li>防止焊锡不足（焊接不良或褪色）</li>-->
+<!--                        <li>焊锡过多（焊球和短路）</li>-->
+<!--                        <li>防止熔融焊料的应变不平衡（元件焊盘不规则、焊盘不规则等）</li>-->
+
+<!--                    </ul>-->
+<!--                </blockquote>-->
+                <h4>1.芯片烘烤</h4>
+                <p>120±5 °C，24小时。（根据来料防潮情况与物料特性制定）</p>
+                <h4>2.钢网厚度：</h4>
+                <p>0.08mm</p>
+                <h4>3.钢网开孔局部优化：</h4>
+                <p>采用分区域处理开窗设计（每一个区域，每一个焊点的大小形状都可能不一样），根据PCB与BGA的实际情况进行分析处理设计下锡的形状与大小。</p>
+                <h4>4.锡膏：</h4>
+                <p>选用阿尔法OM-340 5#粉。</p>
+                <h4>5.贴装线配置：</h4>
+                <p>JUKI F-3RAL+2070+2080,调整贴片压力：0~0.5Pa。
+                </p>
+                <h4>6.炉温控制：</h4>
+                <p>使用劲托AS-1000 10温区热风回流焊炉，1~10区炉温设定：135，145，155，165，185，195，205，235，250，235。链速85cm/min。</p>
+                <h4>7.外观检查：</h4>
+                <p>X-RAY100%检查、FAI首件确认。</p>
+
+                <h3 style="color: #0c85d0;"> 结果：</h3>
+                <h5>试产40PCS Intel M3 8100Y 主板，</h5><h5 style="color: #2aa5ff;">AOI检测良率100%</h5><h5 style="color: #2aa5ff;;">X-ray检测良率100%</h5><h5 style="color: #2aa5ff;">功能测试良率100%</h5>
+
+            </div>
+        </div>
+    </div>
+</main>
+
+<!--footer-->
+                <div class="container mt-5">
+                    <footer class="bg-white border-top p-3 text-muted small">
+                        <div class="row align-items-center justify-content-between">
+                            <div>
+                                <span class="navbar-brand mr-2"><strong></strong></span> Shenzhen E-Lannet Technology Co., Ltd ;
+                                <script>document.write(new Date().getFullYear())</script>
+                                .E-Lannet Technology.
+                            </div>
+                            <div>
+                                Made with <a target="_blank" class="text-secondary font-weight-bold" href="">Shenzhen E-Lannet Technology Co</a> by LJM.
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+    <!-- Core JS  -->
+    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/svg-injector/dist/svg-injector.min.js"></script>
+    <script src="assets/libs/feather-icons/dist/feather.min.js"></script>
+    <!-- Quick JS -->
+    <script src="assets/js/quick-website.js"></script>
+    <!-- Feather Icons -->
+    <script>
+        feather.replace({
+            'width': '1em',
+            'height': '1em'
+        })
+    </script>
+</body>
+
+</html>
